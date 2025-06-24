@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Office Document Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Office Documentation System</h1>
+
+    <label for="bgcolor">Choose Background Color: </label>
+    <input type="color" id="bgcolor" value="#ffffff" />
+
+    <section id="upload-section">
+      <h2>Upload Document</h2>
+      <input type="text" id="docName" placeholder="Document Name" required />
+      <select id="docCategory">
+        <option>Handing Taking</option>
+        <option>Budgeting</option>
+        <option>Technical</option>
+        <option>Administration</option>
+      </select>
+      <button onclick="uploadDocument()">Upload</button>
+    </section>
+
+    <section id="folders">
+      <h2>Document Folders</h2>
+      <div class="folder" id="Handing Taking">
+        <h3>Handing Taking</h3>
+        <ul></ul>
+      </div>
+      <div class="folder" id="Budgeting">
+        <h3>Budgeting</h3>
+        <ul></ul>
+      </div>
+      <div class="folder" id="Technical">
+        <h3>Technical</h3>
+        <ul></ul>
+      </div>
+      <div class="folder" id="Administration">
+        <h3>Administration</h3>
+        <ul></ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
